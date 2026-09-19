@@ -29,6 +29,14 @@
     "esbuild.config.mjs"
   ],
   "creator": [
-    "src/Scene.tsx"
+    "src/Scene.tsx",
+    "src/game/FaceHitter.tsx",
+    "src/game/FallingImage.tsx",
+    "src/game/GameHUD.tsx",
+    "src/game/RuntimeDiagnostics.tsx",
+    "src/game/TossingGame.tsx",
+    "src/game/config.ts",
+    "src/game/physics.tsx",
+    "src/game/sound.ts"
   ]
 }
