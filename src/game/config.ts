@@ -7,6 +7,7 @@ export const GAME_CONFIG = {
   // Keep the ceiling well above the camera/XR viewport so there is room to play.
   ceilingY: 5.5,
   wallX: 1.9,
+  leftWallX: -1.9,
   wallHeight: 7.6,
   wallCenterY: 1.7,
   boundaryThickness: 0.05,

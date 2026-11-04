@@ -1,5 +1,5 @@
-import { Physics, CuboidCollider } from "@react-three/rapier";
-import { useRapier } from "@react-three/rapier";
+/* eslint-disable no-console */
+import { Physics, CuboidCollider, useRapier } from "@react-three/rapier";
 import type { ReactNode } from "react";
 import { useEffect } from "react";
 
@@ -38,7 +38,7 @@ export const TossingPhysics = ({ children, gravity = GAME_CONFIG.gravity, paused
         opacity={GAME_CONFIG.boundaryOpacity}
       />
     </mesh>
-    <mesh position={[-GAME_CONFIG.wallX, GAME_CONFIG.wallCenterY, 0]}>
+    <mesh position={[GAME_CONFIG.leftWallX, GAME_CONFIG.wallCenterY, 0]}>
       <boxGeometry args={[GAME_CONFIG.boundaryThickness, GAME_CONFIG.wallHeight, 0.03]} />
       <meshBasicMaterial
         color={GAME_CONFIG.boundaryColor}
@@ -68,7 +68,7 @@ export const TossingPhysics = ({ children, gravity = GAME_CONFIG.gravity, paused
     />
     <CuboidCollider
       args={[GAME_CONFIG.boundaryThickness / 2, GAME_CONFIG.wallHeight / 2, 0.1]}
-      position={[-GAME_CONFIG.wallX, GAME_CONFIG.wallCenterY, 0]}
+      position={[GAME_CONFIG.leftWallX, GAME_CONFIG.wallCenterY, 0]}
       restitution={GAME_CONFIG.bounce}
       friction={GAME_CONFIG.friction}
     />
