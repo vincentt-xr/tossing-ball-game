@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unknown-property */
 import { Physics, CuboidCollider } from "@react-three/rapier";
 import { useRapier } from "@react-three/rapier";
 import type { ReactNode } from "react";
