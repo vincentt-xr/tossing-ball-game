@@ -1,9 +1,9 @@
+/* eslint-disable no-console */
 import { RigidBody, CuboidCollider } from "@react-three/rapier";
 import type { CollisionEnterPayload, RapierRigidBody } from "@react-three/rapier";
 import { useTexture } from "@react-three/drei";
 import { useFrame, type ThreeEvent } from "@react-three/fiber";
-import { useRef, useState } from "react";
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { DEFAULT_IMAGE_URL, GAME_CONFIG } from "./config";
 

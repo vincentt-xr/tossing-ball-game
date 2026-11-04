@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { Suspense, useEffect } from "react";
 
 import { FallingImage } from "./FallingImage";
