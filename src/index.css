@@ -429,14 +429,9 @@ body,
 .arcade-hud__sub { color: rgba(238, 250, 255, 0.72); font-size: 0.55rem; font-weight: 700; }
 .arcade-hud__combo { position: absolute; top: 112px; left: 50%; transform: translateX(-50%) rotate(-3deg); color: #fef08a; font-size: 0.78rem; font-weight: 900; text-shadow: 0 3px 0 #695f0e, 0 0 10px #fef08a; animation: arcadeComboIn 360ms ease-out; }
 .arcade-hud__combo b { font-size: 1.35rem; }
-.arcade-hud__countdown { position: absolute; top: 42%; left: 50%; transform: translate(-50%, -50%); color: #fef08a; font-size: clamp(4rem, 20vw, 8rem); font-weight: 900; letter-spacing: 0.02em; text-shadow: 0 6px 0 #655d17, 0 0 28px #fef08a; animation: arcadeCountdownIn 800ms ease-out; }
-.arcade-hud__instruction { position: absolute; top: 156px; left: 50%; transform: translateX(-50%); color: rgba(238, 250, 255, 0.9); font-size: clamp(0.65rem, 2.4vw, 0.85rem); font-weight: 900; white-space: nowrap; text-shadow: 0 0 12px rgba(125, 211, 252, 0.9); }
-.arcade-hud__state { position: absolute; top: 156px; left: 50%; display: flex; align-items: center; gap: 10px; transform: translateX(-50%); color: rgba(238, 250, 255, 0.7); font-size: 0.55rem; font-weight: 800; white-space: nowrap; }
-.arcade-hud__state-line { width: 28px; height: 1px; background: #7dd3fc; box-shadow: 0 0 7px #7dd3fc; }
 .arcade-hud__controls { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); }
 .arcade-hud__controls button { pointer-events: auto; padding: 10px 18px; border: 1px solid rgba(125, 211, 252, 0.75); border-radius: 3px; background: rgba(4, 18, 31, 0.2); color: #bceeff; font: 800 0.68rem system-ui, sans-serif; letter-spacing: 0.16em; cursor: pointer; box-shadow: 0 0 12px rgba(56, 189, 248, 0.25), inset 0 0 10px rgba(125, 211, 252, 0.08); }
 .arcade-hud__controls button:hover { background: rgba(56, 189, 248, 0.18); box-shadow: 0 0 18px rgba(56, 189, 248, 0.55); }
-@keyframes arcadeCountdownIn { from { opacity: 0; transform: translate(-50%, -50%) scale(1.35); } to { opacity: 1; transform: translate(-50%, -50%) scale(1); } }
 .face-bounding-box { position: absolute; box-sizing: border-box; border-style: solid; border-radius: 8px; pointer-events: none; box-shadow: 0 0 10px rgba(185, 230, 255, 0.6), inset 0 0 12px rgba(185, 230, 255, 0.08); }
 @keyframes arcadeScorePop { 0% { transform: scale(0.82); opacity: 0.3; } 60% { transform: scale(1.08); opacity: 1; } 100% { transform: scale(1); } }
 @keyframes arcadeComboIn { 0% { opacity: 0; transform: translateX(-50%) rotate(-3deg) scale(0.6); } 100% { opacity: 1; transform: translateX(-50%) rotate(-3deg) scale(1); } }

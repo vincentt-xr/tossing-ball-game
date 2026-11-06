@@ -5,7 +5,7 @@ import { useTexture } from "@react-three/drei";
 import { useFrame, type ThreeEvent } from "@react-three/fiber";
 import { useEffect, useRef, useState } from "react";
 
-import { DEFAULT_IMAGE_URL, GAME_CONFIG } from "./config";
+import { GAME_CONFIG } from "./config";
 
 type TossResult = { points: number; hitOffset: number; hitPoint: [number, number, number] };
 
@@ -19,14 +19,14 @@ export const FallingImage = ({
   onMiss?: () => void;
 }) => {
   const bodyRef = useRef<RapierRigidBody>(null);
-  const texture = useTexture(DEFAULT_IMAGE_URL);
+  // A literal path, so the console visual editor can swap the ball image.
+  const texture = useTexture("/ball.png");
   const [impact, setImpact] = useState<[number, number, number] | null>(null);
   const lastFaceHitAt = useRef(0);
 
   useEffect(() => {
     console.info("[tossing-ball] falling image mounted", {
       start: GAME_CONFIG.imageStart,
-      imageUrl: DEFAULT_IMAGE_URL,
     });
     return () => console.info("[tossing-ball] falling image unmounted");
   }, []);

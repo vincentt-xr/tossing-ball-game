@@ -43,5 +43,3 @@ export const GAME_CONFIG = {
   faceHitImpulseScale: 1,
   faceHitTorqueScale: 1,
 } as const;
-
-export const DEFAULT_IMAGE_URL = "/ball.png";
