@@ -1,10 +1,14 @@
+/* eslint-disable no-console */
 import { Component, type ErrorInfo, type ReactNode } from "react";
 
 type Props = { children: ReactNode };
 type State = { hasError: boolean };
 
 export class RuntimeDiagnostics extends Component<Props, State> {
-  public state: State = { hasError: false };
+  constructor(props: Props) {
+    super(props);
+    this.state = { hasError: false };
+  }
 
   public static getDerivedStateFromError(): State {
     return { hasError: true };
@@ -16,10 +20,12 @@ export class RuntimeDiagnostics extends Component<Props, State> {
   }
 
   public render() {
-    if (this.state.hasError) {
+    const { hasError } = this.state;
+    const { children } = this.props;
+    if (hasError) {
       return null;
     }
 
-    return this.props.children;
+    return children;
   }
 }

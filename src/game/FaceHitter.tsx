@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unknown-property */
 import { Html } from "@react-three/drei";
 import { RigidBody, CuboidCollider, useRapier } from "@react-three/rapier";
 import type { RapierRigidBody, RapierCollider } from "@react-three/rapier";

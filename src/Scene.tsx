@@ -9,7 +9,6 @@
 // runs --report-unused-disable-directives, which makes the unused directive
 // itself the error. Disabling at the config keeps the suppression true in both
 // states.
-/* eslint-disable react/no-unknown-property */
 import { Suspense, useEffect, useMemo, useState } from "react";
 import { GestureTracker } from "@vincentt-xr/sdk/tracking";
 
